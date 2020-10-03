@@ -69,6 +69,12 @@ def print_results(results_dic, results_stats_dic, model,
 
     print()
 
+    print("Results:")
+    for key, data in results_dic.items():
+        print(data)
+
+    print()
+
     print('Number of Images: %d' % (stats['n_images']))
     print('Number of Dog Images: %d' % (stats['n_dogs_img']))
     print('Number of "Not-a" Dog Images: %d' % (stats['n_notdogs_img']))
@@ -89,15 +95,13 @@ def print_results(results_dic, results_stats_dic, model,
         print('Incorrect dog classifications:')
         for key, data in results_dic.items():
             if sum(data[3:]) == 1:
-                print("%s real_label=%s result_label=%s" %
-                      (key, data[0], data[1]))
+                print(data)
 
     if print_incorrect_breed and (stats['n_correct_dogs'] != stats['n_correct_breed']):
         print()
         print('Incorrect breed classifications:')
         for key, data in results_dic.items():
             if sum(data[3:]) == 2 and data[2] == 0:
-                print("%s real_label=%s result_label=%s" %
-                        (key, data[0], data[1]))
+                print(data)
 
     print()

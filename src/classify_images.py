@@ -68,4 +68,5 @@ def classify_images(images_dir, results_dic, model):
 
     for file, labels in results_dic.items():
         model_label = classifier("%s/%s"%(images_dir, file), model)
-        results_dic[file] += [model_label, (1 if model_label == labels[0] else 0)]
+        is_match = labels[0] in [label.strip().lower() for label in model_label.split(', ')]
+        results_dic[file] += [model_label.lower(), 1 if is_match else 0]
