@@ -83,15 +83,6 @@ N Images:  7  N Dog Images:  5  N NotDog Images:  2
 Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:  40.0
 CNN Model: alexnet
 
-Results:
-['border collie', 'border collie', 1, 1, 1]
-['border collie', 'english springer, english springer spaniel', 0, 1, 1]
-['border collie', 'flat-coated retriever', 0, 1, 1]
-['border collie', 'bernese mountain dog', 0, 1, 1]
-['border collie', 'border collie', 1, 1, 1]
-['cat', 'tabby, tabby cat, cat', 1, 0, 0]
-['cat', 'tabby, tabby cat, cat', 1, 0, 0]
-
 Number of Images: 7
 Number of Dog Images: 5
 Number of "Not-a" Dog Images: 2

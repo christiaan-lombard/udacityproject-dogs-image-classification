@@ -83,15 +83,6 @@ N Images:  7  N Dog Images:  5  N NotDog Images:  2
 Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:  60.0
 CNN Model: vgg
 
-Results:
-['border collie', 'border collie', 1, 1, 1]
-['border collie', 'border collie', 1, 1, 1]
-['border collie', 'giant schnauzer', 0, 1, 1]
-['border collie', 'collie', 0, 1, 1]
-['border collie', 'border collie', 1, 1, 1]
-['cat', 'tabby, tabby cat, cat', 1, 0, 0]
-['cat', 'tabby, tabby cat, cat', 1, 0, 0]
-
 Number of Images: 7
 Number of Dog Images: 5
 Number of "Not-a" Dog Images: 2
@@ -106,4 +97,4 @@ Incorrect breed classifications:
 ['border collie', 'collie', 0, 1, 1]
 
 
-** Total Elapsed Runtime: 0:0:0
+** Total Elapsed Runtime: 0:0:1
