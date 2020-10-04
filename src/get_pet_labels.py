@@ -44,6 +44,10 @@ def get_pet_labels(image_dir):
     results_dic = {}
 
     for file in listdir(image_dir):
+
+        if file.startswith('.'):
+            continue
+
         label = file.split('.')[0].strip('_0123456789').replace('_', ' ').lower()
         results_dic[file] = [label]
 
