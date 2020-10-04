@@ -3,15 +3,18 @@ Command Line Arguments:
     arch = resnet 
  dogfile = dognames.txt
 
-Pet Image Label Dictionary has 7 key-value pairs.
-Below are 7 of them:
+Pet Image Label Dictionary has 12 key-value pairs.
+Below are 10 of them:
  1 key:          Border_collie_002.jpg  label:              border collie
  2 key:          Border_collie_003.jpg  label:              border collie
  3 key:          Border_collie_004.jpg  label:              border collie
  4 key:          Border_collie_005.jpg  label:              border collie
  5 key:          Border_collie_006.jpg  label:              border collie
- 6 key:                    Cat_001.jpg  label:                        cat
- 7 key:                    Cat_002.jpg  label:                        cat
+ 6 key:          Border_collie_007.jpg  label:              border collie
+ 7 key:                    Cat_001.jpg  label:                        cat
+ 8 key:                    Cat_002.jpg  label:                        cat
+ 9 key:  Staffordshire_terrier_001.jpg  label:      staffordshire terrier
+10 key:  Staffordshire_terrier_002.jpg  label:      staffordshire terrier
 
      MATCH:
 
@@ -21,11 +24,20 @@ Real:              border collie   Classifier:                  border collie
          Border_collie_006.jpg: 
 Real:              border collie   Classifier:                  border collie
 
+         Border_collie_007.jpg: 
+Real:              border collie   Classifier:                  border collie
+
                    Cat_001.jpg: 
 Real:                        cat   Classifier:          tabby, tabby cat, cat
 
                    Cat_002.jpg: 
 Real:                        cat   Classifier:          tabby, tabby cat, cat
+
+ Staffordshire_terrier_001.jpg: 
+Real:      staffordshire terrier   Classifier: american staffordshire terrier, staffordshire terrier, american pit bull terrier, pit bull terrier
+
+ Staffordshire_terrier_002.jpg: 
+Real:      staffordshire terrier   Classifier: american staffordshire terrier, staffordshire terrier, american pit bull terrier, pit bull terrier
 
  NOT A MATCH:
 
@@ -38,7 +50,13 @@ Real:              border collie   Classifier: newfoundland, newfoundland dog
          Border_collie_005.jpg: 
 Real:              border collie   Classifier:           bernese mountain dog
 
-# Total Images 7 # Matches: 4 # NOT Matches: 3
+                   Tag_001.jpg: 
+Real:                        tag   Classifier: cellular telephone, cellular phone, cellphone, cell, mobile phone
+
+               Veggies_001.jpg: 
+Real:                    veggies   Classifier:                   acorn squash
+
+# Total Images 12 # Matches: 7 # NOT Matches: 5
 
      MATCH:
 
@@ -50,6 +68,10 @@ PetLabelDog: 1  ClassLabelDog: 1
 Real:              border collie   Classifier:                  border collie  
 PetLabelDog: 1  ClassLabelDog: 1
 
+         Border_collie_007.jpg: 
+Real:              border collie   Classifier:                  border collie  
+PetLabelDog: 1  ClassLabelDog: 1
+
                    Cat_001.jpg: 
 Real:                        cat   Classifier:          tabby, tabby cat, cat  
 PetLabelDog: 0  ClassLabelDog: 0
@@ -57,6 +79,14 @@ PetLabelDog: 0  ClassLabelDog: 0
                    Cat_002.jpg: 
 Real:                        cat   Classifier:          tabby, tabby cat, cat  
 PetLabelDog: 0  ClassLabelDog: 0
+
+ Staffordshire_terrier_001.jpg: 
+Real:      staffordshire terrier   Classifier: american staffordshire terrier, staffordshire terrier, american pit bull terrier, pit bull terrier  
+PetLabelDog: 1  ClassLabelDog: 1
+
+ Staffordshire_terrier_002.jpg: 
+Real:      staffordshire terrier   Classifier: american staffordshire terrier, staffordshire terrier, american pit bull terrier, pit bull terrier  
+PetLabelDog: 1  ClassLabelDog: 1
 
  NOT A MATCH:
 
@@ -72,30 +102,37 @@ PetLabelDog: 1  ClassLabelDog: 1
 Real:              border collie   Classifier:           bernese mountain dog  
 PetLabelDog: 1  ClassLabelDog: 1
 
-# Total Images 7 # Matches: 4 # NOT Matches: 3
+                   Tag_001.jpg: 
+Real:                        tag   Classifier: cellular telephone, cellular phone, cellphone, cell, mobile phone  
+PetLabelDog: 0  ClassLabelDog: 0
+
+               Veggies_001.jpg: 
+Real:                    veggies   Classifier:                   acorn squash  
+PetLabelDog: 0  ClassLabelDog: 0
+
+# Total Images 12 # Matches: 7 # NOT Matches: 5
 
  ** Statistics from calculates_results_stats() function:
-N Images:  7  N Dog Images:  5  N NotDog Images:  2 
-Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:  40.0
+N Images: 12  N Dog Images:  8  N NotDog Images:  4 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:  62.5
 
  ** Check Statistics - calculated from this function as a check:
-N Images:  7  N Dog Images:  5  N NotDog Images:  2 
-Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:  40.0
+N Images: 12  N Dog Images:  8  N NotDog Images:  4 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:  62.5
 CNN Model: resnet
 
-Number of Images: 7
-Number of Dog Images: 5
-Number of "Not-a" Dog Images: 2
+Number of Images: 12
+Number of Dog Images: 8
+Number of "Not-a" Dog Images: 4
 
 % Correct Dogs: 100.000000
-% Correct Breed: 40.000000
+% Correct Breed: 62.500000
 % Correct "Not-a" Dog: 100.000000
-% Match: 57.142857
+% Match: 58.333333
 
 Incorrect breed classifications:
 ['border collie', 'bernese mountain dog', 0, 1, 1]
 ['border collie', 'newfoundland, newfoundland dog', 0, 1, 1]
 ['border collie', 'bernese mountain dog', 0, 1, 1]
 
-
-** Total Elapsed Runtime: 0:0:0
+** Total Elapsed Runtime: 00:00:00.578

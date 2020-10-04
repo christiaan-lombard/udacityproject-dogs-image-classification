@@ -330,5 +330,4 @@ Incorrect breed classifications:
 ['beagle', 'walker hound, walker foxhound', 0, 1, 1]
 ['great pyrenees', 'kuvasz', 0, 1, 1]
 
-
-** Total Elapsed Runtime: 0:0:5
+** Total Elapsed Runtime: 00:00:06.027
