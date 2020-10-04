@@ -10,6 +10,16 @@ My project submission for the Udacity AI Programming with Python Nanodegree, Pyt
 - `conda install pytorch torchvision python-resize-image cudatoolkit=10.2 -c pytorch` - [Install PyTorch](https://pytorch.org/get-started/locally/)
 
 
+### Scripts
+
+Go to `src/` (`cd src`) directory to run scripts
+
+- `python check_images.py` - Classify images with default arguments
+- `python check_images.py --dir uploaded_images/ --arch vgg  --dogfile dognames.txt`  - Classify `uploaded_images/` using `vgg` classifier and `dognames.txt` dogbreeds list.
+- `python resize_images.py` - Resizes `uploaded_images` to max 960p x 960p
+- `./run_models_batch.bat` - Run classifier on `pet_images` for every classifier and save results
+- `./run_models_batch_uploaded.bat` - Run classifier on `uploaded_images` for every classifier and save results
+
 
 ## Udacity Specifications
 
